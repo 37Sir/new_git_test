@@ -1,17 +1,33 @@
 package test;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Calendar;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Random;
+import java.util.TreeMap;
 import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.Supplier;
 
 public class test1 {
 	public static void main(String[] args) {
 //		steam();
-		System.out.println(5 ^ 5);
+//		System.out.println(5 ^ 5);
+		TreeMap<Integer, Integer> map = new TreeMap<Integer, Integer>();
+		map.put(1, 1);
+		map.put(2, 2);
+		map.put(3, 3);
+		map.put(4, 4);
+		map.put(5, 5);
+		map.put(6, 6);
+		System.out.println(map.floorEntry(6).getValue());
+		System.out.println(map.get(7));
 	}
 	
+	public static boolean xxx(int s) {return s > 2;}
 	
 	public static void futureTest() {
 	    CompletableFuture<Void> future = CompletableFuture.supplyAsync(new Supplier<Integer>() {
