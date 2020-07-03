@@ -233,5 +233,9 @@ public class MathCalcByStr {
 //		
 //		double result = new MathCalcByStr().eval(exp, 2);
 //		System.out.println(result);
+		String exp = "MIN(n*10,MIN(15,10))";
+		
+		double result = new MathCalcByStr().eval(exp, 2);
+		System.out.println(result);
 	}
 }
