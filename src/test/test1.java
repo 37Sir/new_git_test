@@ -16,15 +16,9 @@ public class test1 {
 	public static void main(String[] args) {
 //		steam();
 //		System.out.println(5 ^ 5);
-		TreeMap<Integer, Integer> map = new TreeMap<Integer, Integer>();
-		map.put(1, 1);
-		map.put(2, 2);
-		map.put(3, 3);
-		map.put(4, 4);
-		map.put(5, 5);
-		map.put(6, 6);
-		System.out.println(map.floorEntry(6).getValue());
-		System.out.println(map.get(7));
+		List<Integer> list  = new ArrayList<Integer>();
+		list.add(2);
+		list.add(5);
 	}
 	
 	public static boolean xxx(int s) {return s > 2;}
